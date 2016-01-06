@@ -44,12 +44,12 @@ int main(int argc, const char * argv[]) {
         str = bool2String(isTheSame);
         NSLog(@"are 17 and 23 the same? %@", str);
         
-        shape* cir = [circle new];
+        shape* cir = [[circle alloc] init];
         [cir setColor:3];
         [cir setType:4];
         [cir draw];
         
-        shape* tri = [triangle new];
+        shape* tri = [[triangle alloc] init];
         [tri setColor:1];
         [tri setType:2];
         [tri draw];
