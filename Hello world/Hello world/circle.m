@@ -14,7 +14,7 @@
 -(instancetype)init
 {
     self = [super init];
-    // self = nil;
+    // self = nil; // don't do this
     
     return self;
 }
