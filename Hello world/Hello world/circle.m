@@ -19,6 +19,11 @@
     return self;
 }
 
+//destory
+-(void)dealloc{
+    NSLog(@"circle is releasing.");
+}
+
 // draw
 - (void) draw
 {

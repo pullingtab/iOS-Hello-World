@@ -13,8 +13,10 @@
     int type;
     int color;
 }
+@property(nonatomic) int type;
+@property(nonatomic) int color;
 - (void) draw;
-- (void) setType: (int)t;
-- (void) setColor: (int)c;
+//- (void) setType: (int)t;
+//- (void) setColor: (int)c;
 - (int) type;
 @end

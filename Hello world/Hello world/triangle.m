@@ -19,6 +19,10 @@
     return self;
 }
 
+- (void) dealloc{
+    NSLog(@"triangle is releasing.");
+}
+
 // draw
 - (void) draw
 {

@@ -10,32 +10,34 @@
 
 @implementation shape
 
+@synthesize type;
+@synthesize color;
 // draw
 - (void)draw
 {
     NSLog(@"shape draw");
 }
 
-// setType
-- (void)setType:(int)t
-{
-    type = t;
-    NSLog(@"type = %d",t);
-    
-}
+//// setType
+//- (void)setType:(int)t
+//{
+//    type = t;
+//    NSLog(@"type = %d",t);
+//    
+//}
 
-// setColor
-- (void)setColor:(int)c
-{
-    color = c;
-    NSLog(@"color = %d",c);
-}
-
-// type
-- (int) type
-{
-    return type;
-}
+//// setColor
+//- (void)setColor:(int)c
+//{
+//    color = c;
+//    NSLog(@"color = %d",c);
+//}
+//
+//// type
+//- (int) type
+//{
+//    return type;
+//}
 
 // description
 - (NSString*) description

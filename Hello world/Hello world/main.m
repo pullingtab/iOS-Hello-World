@@ -11,6 +11,9 @@
 #import "shape.h"
 #import "circle.h"
 #import "triangle.h"
+#import "group.h"
+
+#import "Deck.h"
 
 @class triangle;
 @class circle;
@@ -95,6 +98,21 @@ int main(int argc, const char * argv[]) {
         if ([str hasSuffix:end]) {
             NSLog(@"\"%@\" ends with \"%@\"",str, end);
         }
+        
+        //group
+        group* Group = [group arrayWithCapasity:2];
+        [Group addShape:cir];
+        [Group addShape:tri];
+        NSLog(@"[Group count] = %lu",(unsigned long)[Group count]);
+        for (int i=0; i<[Group count]; ++i) {
+            NSLog(@"[Group objectAtIndex:%d] is %@", i, [Group objectAtIndex:i]);
+        }
+        for (int i=0; i<[Group count]; ) {
+            [Group removeObjectAtIndex:0];
+            NSLog(@"[Group removeObjectAtIndex:0]");
+            NSLog(@"[Group count] = %lu", (unsigned long)[Group count]);
+        }
+        
     }
     return 0;
 }

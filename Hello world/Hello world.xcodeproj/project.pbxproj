@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B950AD771C40DCC20042F219 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = B950AD761C40DCC20042F219 /* Deck.m */; };
+		B9EC034C1C40C37100D23715 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EC034B1C40C37100D23715 /* Card.m */; };
 		B9EF44511C3519A5004CD432 /* shape.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EF44501C3519A5004CD432 /* shape.m */; };
 		B9EF44541C351A4E004CD432 /* circle.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EF44531C351A4E004CD432 /* circle.m */; };
 		B9EF44571C351AE7004CD432 /* triangle.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EF44561C351AE7004CD432 /* triangle.m */; };
+		B9F24F531C3CE851007A0CD2 /* group.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F24F521C3CE851007A0CD2 /* group.m */; };
 		B9FB90A91C18284000FD95C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FB90A81C18284000FD95C0 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -26,12 +29,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B950AD751C40DCC20042F219 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = "Hello world/Deck.h"; sourceTree = "<group>"; };
+		B950AD761C40DCC20042F219 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = "Hello world/Deck.m"; sourceTree = "<group>"; };
+		B9EC034A1C40C37100D23715 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = "Hello world/Card.h"; sourceTree = "<group>"; };
+		B9EC034B1C40C37100D23715 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = "Hello world/Card.m"; sourceTree = "<group>"; };
 		B9EF444F1C3519A5004CD432 /* shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shape.h; sourceTree = "<group>"; };
 		B9EF44501C3519A5004CD432 /* shape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shape.m; sourceTree = "<group>"; };
 		B9EF44521C351A4E004CD432 /* circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = circle.h; sourceTree = "<group>"; };
 		B9EF44531C351A4E004CD432 /* circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = circle.m; sourceTree = "<group>"; };
 		B9EF44551C351AE7004CD432 /* triangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = triangle.h; sourceTree = "<group>"; };
 		B9EF44561C351AE7004CD432 /* triangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = triangle.m; sourceTree = "<group>"; };
+		B9F24F511C3CE851007A0CD2 /* group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = group.h; sourceTree = "<group>"; };
+		B9F24F521C3CE851007A0CD2 /* group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = group.m; sourceTree = "<group>"; };
 		B9FB90A51C18284000FD95C0 /* Hello world */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Hello world"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9FB90A81C18284000FD95C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,9 +56,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B9EC03491C40C33600D23715 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				B9EC034A1C40C37100D23715 /* Card.h */,
+				B9EC034B1C40C37100D23715 /* Card.m */,
+				B950AD751C40DCC20042F219 /* Deck.h */,
+				B950AD761C40DCC20042F219 /* Deck.m */,
+			);
+			name = Card;
+			sourceTree = "<group>";
+		};
 		B9FB909C1C18284000FD95C0 = {
 			isa = PBXGroup;
 			children = (
+				B9EC03491C40C33600D23715 /* Card */,
 				B9FB90A71C18284000FD95C0 /* Hello world */,
 				B9FB90A61C18284000FD95C0 /* Products */,
 			);
@@ -73,6 +94,8 @@
 				B9EF44521C351A4E004CD432 /* circle.h */,
 				B9EF44531C351A4E004CD432 /* circle.m */,
 				B9EF44501C3519A5004CD432 /* shape.m */,
+				B9F24F511C3CE851007A0CD2 /* group.h */,
+				B9F24F521C3CE851007A0CD2 /* group.m */,
 			);
 			path = "Hello world";
 			sourceTree = "<group>";
@@ -134,9 +157,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9FB90A91C18284000FD95C0 /* main.m in Sources */,
+				B950AD771C40DCC20042F219 /* Deck.m in Sources */,
 				B9EF44511C3519A5004CD432 /* shape.m in Sources */,
 				B9EF44541C351A4E004CD432 /* circle.m in Sources */,
 				B9EF44571C351AE7004CD432 /* triangle.m in Sources */,
+				B9F24F531C3CE851007A0CD2 /* group.m in Sources */,
+				B9EC034C1C40C37100D23715 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
