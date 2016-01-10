@@ -13,8 +13,6 @@
 #import "triangle.h"
 #import "group.h"
 
-#import "Deck.h"
-
 @class triangle;
 @class circle;
 
