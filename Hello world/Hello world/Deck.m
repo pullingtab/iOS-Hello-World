@@ -14,4 +14,25 @@
 
 @implementation Deck
 
+-(void)addCard:(Card*)card atTop:(BOOL)atTop{
+    if(atTop)
+        [[self cards] insertObject:card atIndex:0];
+    else
+        [[self cards] addObject:card];
+}
+
+-(void)addCard:(Card*)card{
+    [self addCard:card atTop:NO];
+}
+
+-(Card*)drawRandomCard{
+    Card* card = nil;
+    if ([self.cards count]) {
+        unsigned int index = arc4random()%[self.cards count];
+        card = self.cards[index];
+        [self.cards removeObjectAtIndex:index];
+    }
+    
+    return card;
+}
 @end

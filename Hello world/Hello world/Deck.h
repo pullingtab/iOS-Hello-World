@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Deck : NSObject
+@class Card;
 
+@interface Deck : NSObject
+-(void)addCard:(Card*)card atTop:(BOOL)atTop;
+-(void)addCard:(Card*)card;
+-(Card*)drawRandomCard;
 @end
